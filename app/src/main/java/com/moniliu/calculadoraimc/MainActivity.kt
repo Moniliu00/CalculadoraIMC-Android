@@ -106,13 +106,13 @@ class MainActivity : AppCompatActivity() {
       }
 
     }
-    fun calculateBMI(){
+    fun calculateBMI() {
         val heightInMeters = height / 100
 
+        val result = weight / heightInMeters.pow(2)
 
-        val result = weight / heightInMeters.pow(n = 2)
+        resultTextView.text = String.format("%.2f", result)
 
-        resultTextView.text = result.toString()
 
     }
 
